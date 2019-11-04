@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <%=form_tag article_path(@article), method: :put do%>
+      <label>Title:</label>
+      <%=text_field_tag :'article[title]'%>
+      <label>Description:</label>
+      <br>
+      <%=text_area_tag :'article[description]'%>
+      <br>
+      <%=submit_tag "Submit Article"%>
+    <%end%>
+  </body>
+</html>
